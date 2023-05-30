@@ -1,13 +1,13 @@
 const mongoose = require("mongoose");
-import { Schema } from "mongoose";
+const Schema = mongoose.Schema;
 
-const UserSchema = new Schema(
+const userSchema = new Schema(
   {
-    firstName: {
+    firstname: {
       type: String,
       required: [true, "First Name is a mandatory field"],
     },
-    lastName: {
+    lastname: {
       type: String,
       required: [true, "Last Name is a mandatory field"],
     },
